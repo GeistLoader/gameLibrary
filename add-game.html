@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script  src="js/dom.js" defer></script>
+    <script  src="js/add-game.js" defer></script>
+    <link type="text/css" href="styles/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="background"></div>
+    <div class="overlay"></div>
+    <main>
+        <header>
+            <!-- Place a logo image here-->
+            <img src="./images/Image(2).png" alt="Logo image of games" class="logo" />
+             <nav>
+              <ul>
+                <li>
+                  <a href="./index.html">Home</a>
+                </li>
+                <li >
+                  <a href="statistics.html">Statistics</a></li>
+                  <li><a href="table-overview.html">overview</a></li>
+                  <li class="Add new game">
+                    <a href="add-game.html">Add new game</a>
+                </li>
+                <li ><a href="./Polling-MinecraftStarterFiles/minecraft.html">minecraft</a></li>
+              </ul>
+            </nav>
+          </header>
+        <h2>Add a New Game</h2>
+        
+        <form id="add-game-form">
+          
+          <div>
+            <label for="game-name">Game Name:</label>
+            <input type="text" id="game-name" name="name"  />
+          </div>
+    
+          
+          <div>
+            <label for="game-type">Type:</label>
+            <input type="text" id="game-type" name="type"  />
+          </div>
+    
+          
+          <div>
+            <label for="game-rating">Rating (0-10):</label>
+            <input type="number" id="game-rating" name="rating"  />
+          </div>
+    
+          
+    
+          
+          <div>
+            <button type="submit" id="submit">Add Game</button>
+          </div>
+        </form>
+         <div id="status"></div>
+      </main>
+   
+    
+</body>
+</html>

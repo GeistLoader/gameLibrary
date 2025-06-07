@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" href="styles/style.css" rel="stylesheet" />
+  
+  <!-- Include javascript files here -->
+  <script  src="js/dom.js" defer></script>
+  <script src="js/table-overview.js" defer></script>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="overlay"></div>
+  
+    <div class="content">
+      <header>
+        <img src="./images/Image(2).png" alt="Logo image of games" class="logo" />
+        <nav>
+          <ul>
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="actual">
+              <a href="statistics.html">Statistics</a></li>
+              <li><a href="table-overview.html">overview</a></li>
+              <li class="Add new game">
+                <a href="add-game.html">Add new game</a>
+              
+            </li>
+            <li ><a href="./Polling-MinecraftStarterFiles/minecraft.html">minecraft</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main id="main">
+        <h2>my games</h2>
+      
+        <div id="filter">
+          <button id="fav">Show favorite games</button>
+          <button id="all">Show all games</button>
+        </div>
+      
+        <div>
+          Show games with a rating higher than 
+          <input id="rating" type="number">
+        </div>
+      
+        
+        <form id="game-form">
+          <button id="submit" type="button">Fetch Games</button>
+          <label for="game-input">From backend with the letter:</label>
+          <input id="game-input" placeholder="Enter letter" required>
+        </form>
+      
+        
+        <table id="tableId">
+          <caption id="table-caption"></caption>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Rating</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="my-games-table-body"></tbody>
+        </table>
+      </main>
+      <footer>Theys pieter: Front-end - 2025</footer></div>
+</body>
+</html>

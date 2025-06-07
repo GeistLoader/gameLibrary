@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Games</title>
+  <link type="text/css" href="styles/style.css" rel="stylesheet" />
+  <script  src="js/FTP.js" defer></script>
+</head>
+<body>
+  <div class="background"></div>
+  <div class="overlay"></div>
+
+  <div class="content">
+    <header>
+        <img src="./images/Image(2).png" alt="Logo image of games" class="logo" />
+      
+          
+    </header>
+    <nav>
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="actual">
+            <a href="statistics.html">Statistics</a></li>
+            <li><a href="table-overview.html">overview</a></li>
+            <li class="Add new game">
+              <a href="add-game.html">Add new game</a>
+            
+          </li>
+          <li ><a href="./Polling-MinecraftStarterFiles/minecraft.html">minecraft</a></li>
+        </ul>
+      </nav>
+    <main>
+      <h2>free to play games</h2>
+    <div id="panel">
+        
+            <div id="search">Search game by title: <input type="text" id="search-title" /></div>
+            <div id="genre">Search by genre: <input type="text" id="search-genre" /></div>
+            <div id="new">Show newest first: <input type="radio" name="sort" id="sort-newest" /></div>
+            <div id="random">
+                Want to try something new? <button id="random-button">I am feeling lucky</button></div>
+            <div id="reset">
+                <button id="fav">reset filters</button></div>
+
+            <p id="game-count"></p>
+    </div> 
+        <div id="gameTabel"></div>
+    </main>
+
+    <footer>Theys Pieter: Front-end - 2025</footer>
+  </div>
+</body>
+</html>
